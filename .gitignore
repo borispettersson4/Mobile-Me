@@ -1,67 +1,36 @@
-workspace.xml
-junitvmwatcher*.properties
-build.properties
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Library/
 
-# generated java classes and java source files
-#   manually add any custom artifacts that can't be generated from the models
-#   http://confluence.jetbrains.com/display/MPSD25/HowTo+--+MPS+and+Git
-classes_gen
-source_gen
-source_gen.caches
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
 
-# generated test code and test results
-test_gen
-test_gen.caches
-TEST-*.xml
-junit*.properties
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# ============ #
+# OS generated #
+# ============ #
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
+.DS_Store?
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Windows
-# =========================
-
-# Windows image file caches
-Thumbs.db
 ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
+Thumbs.db
+Broken Dreams/Broken Dreams.csproj
+Broken Dreams/Broken Dreams.Plugins.csproj
+Broken Dreams/Broken Dreams.Editor.csproj
+Broken Dreams/Broken Dreams.Editor.Plugins.csproj
+Broken Dreams/Assets/Scenes/Game Scenes/Test Scenes/1_Starting Map/StartingMap - David.unity.meta
+Broken Dreams/Assets/Scenes/Game Scenes/Test Scenes/1_Starting Map/StartingMap - Dani.unity.meta
