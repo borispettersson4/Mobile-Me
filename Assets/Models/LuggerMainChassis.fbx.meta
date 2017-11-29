@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 7467fc792c38eef439d64034bbf369ca
+timeCreated: 1511902848
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BackBrace
+    100002: BackBumper
+    100004: DriverSeat
+    100006: EngineBay
+    100008: FrontBumper
+    100010: FrontGrill
+    100012: FrontLeftWheel
+    100014: FrontRightWheel
+    100016: Hood
+    100018: LeftHeadLight
+    100020: //RootNode
+    100022: PassengerSeat
+    100024: RearLeftWheel
+    100026: RearRightWheel
+    100028: RightHeadlight
+    100030: SteeringWheel
+    400000: BackBrace
+    400002: BackBumper
+    400004: DriverSeat
+    400006: EngineBay
+    400008: FrontBumper
+    400010: FrontGrill
+    400012: FrontLeftWheel
+    400014: FrontRightWheel
+    400016: Hood
+    400018: LeftHeadLight
+    400020: //RootNode
+    400022: PassengerSeat
+    400024: RearLeftWheel
+    400026: RearRightWheel
+    400028: RightHeadlight
+    400030: SteeringWheel
+    2300000: BackBrace
+    2300002: BackBumper
+    2300004: DriverSeat
+    2300006: EngineBay
+    2300008: FrontBumper
+    2300010: FrontGrill
+    2300012: FrontLeftWheel
+    2300014: FrontRightWheel
+    2300016: Hood
+    2300018: LeftHeadLight
+    2300020: //RootNode
+    2300022: PassengerSeat
+    2300024: RearLeftWheel
+    2300026: RearRightWheel
+    2300028: RightHeadlight
+    2300030: SteeringWheel
+    3300000: BackBrace
+    3300002: BackBumper
+    3300004: DriverSeat
+    3300006: EngineBay
+    3300008: FrontBumper
+    3300010: FrontGrill
+    3300012: FrontLeftWheel
+    3300014: FrontRightWheel
+    3300016: Hood
+    3300018: LeftHeadLight
+    3300020: //RootNode
+    3300022: PassengerSeat
+    3300024: RearLeftWheel
+    3300026: RearRightWheel
+    3300028: RightHeadlight
+    3300030: SteeringWheel
+    4300000: LuggerMainChassis
+    4300002: FrontRightWheel
+    4300004: RearRightWheel
+    4300006: RearLeftWheel
+    4300008: FrontLeftWheel
+    4300010: BackBrace
+    4300012: LeftHeadLight
+    4300014: RightHeadlight
+    4300016: Hood
+    4300018: SteeringWheel
+    4300020: FrontGrill
+    4300022: FrontBumper
+    4300024: BackBumper
+    4300026: PassengerSeat
+    4300028: DriverSeat
+    4300030: EngineBay
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMat
+    second: {fileID: 2100000, guid: 4af94c5f71269454d891a9dbdfd2c244, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlueMat
+    second: {fileID: 2100000, guid: 89b32cc13bb418f49aaa2b806dbac422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkBlueMat
+    second: {fileID: 2100000, guid: 66fe853534ba60041bb201fad9bac50f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GrayMat
+    second: {fileID: 2100000, guid: a51ec24a8b49fd9439fcd23564b7b1f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteMat
+    second: {fileID: 2100000, guid: 7e0bfd1dc97494c4f987cd4e0a3d4757, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YellowMat
+    second: {fileID: 2100000, guid: d2e85301d3a6b8040a0ae6f69cc4f0cb, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
