@@ -21,6 +21,8 @@ ModelImporter:
     100026: RearRightWheel
     100028: RightHeadlight
     100030: SteeringWheel
+    100032: CartPuller
+    100034: Exhaust
     400000: BackBrace
     400002: BackBumper
     400004: DriverSeat
@@ -37,6 +39,8 @@ ModelImporter:
     400026: RearRightWheel
     400028: RightHeadlight
     400030: SteeringWheel
+    400032: CartPuller
+    400034: Exhaust
     2300000: BackBrace
     2300002: BackBumper
     2300004: DriverSeat
@@ -53,6 +57,8 @@ ModelImporter:
     2300026: RearRightWheel
     2300028: RightHeadlight
     2300030: SteeringWheel
+    2300032: CartPuller
+    2300034: Exhaust
     3300000: BackBrace
     3300002: BackBumper
     3300004: DriverSeat
@@ -69,6 +75,8 @@ ModelImporter:
     3300026: RearRightWheel
     3300028: RightHeadlight
     3300030: SteeringWheel
+    3300032: CartPuller
+    3300034: Exhaust
     4300000: LuggerMainChassis
     4300002: FrontRightWheel
     4300004: RearRightWheel
@@ -85,6 +93,8 @@ ModelImporter:
     4300026: PassengerSeat
     4300028: DriverSeat
     4300030: EngineBay
+    4300032: Exhaust
+    4300034: CartPuller
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -96,6 +106,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: BlueMat
     second: {fileID: 2100000, guid: 89b32cc13bb418f49aaa2b806dbac422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ColorPalleteMat
+    second: {fileID: 2100000, guid: c0b3d1fa0e8dd4d45b5de787bbfffe47, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
