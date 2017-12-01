@@ -23,6 +23,9 @@ ModelImporter:
     100030: SteeringWheel
     100032: CartPuller
     100034: Exhaust
+    100036: Battery
+    100038: V6
+    100040: WaterCollant
     400000: BackBrace
     400002: BackBumper
     400004: DriverSeat
@@ -41,6 +44,9 @@ ModelImporter:
     400030: SteeringWheel
     400032: CartPuller
     400034: Exhaust
+    400036: Battery
+    400038: V6
+    400040: WaterCollant
     2300000: BackBrace
     2300002: BackBumper
     2300004: DriverSeat
@@ -59,6 +65,9 @@ ModelImporter:
     2300030: SteeringWheel
     2300032: CartPuller
     2300034: Exhaust
+    2300036: Battery
+    2300038: V6
+    2300040: WaterCollant
     3300000: BackBrace
     3300002: BackBumper
     3300004: DriverSeat
@@ -77,6 +86,9 @@ ModelImporter:
     3300030: SteeringWheel
     3300032: CartPuller
     3300034: Exhaust
+    3300036: Battery
+    3300038: V6
+    3300040: WaterCollant
     4300000: LuggerMainChassis
     4300002: FrontRightWheel
     4300004: RearRightWheel
@@ -95,6 +107,9 @@ ModelImporter:
     4300030: EngineBay
     4300032: Exhaust
     4300034: CartPuller
+    4300036: Battery
+    4300038: V6
+    4300040: WaterCollant
   externalObjects:
   - first:
       type: UnityEngine:Material

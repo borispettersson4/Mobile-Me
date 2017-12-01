@@ -1,87 +1,26 @@
 fileFormatVersion: 2
-guid: 5eacb7a450c109f4dbcbb4a64440cf3f
-timeCreated: 1511902847
+guid: 42988f81878031a459d82d1c7678435f
+timeCreated: 1512083561
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: HardHat
-    100002: HeadAcceseory
-    100004: joint10
-    100006: joint16
-    100008: joint20
-    100010: joint22
-    100012: joint23
-    100014: joint24
-    100016: joint8
-    100018: joint9
-    100020: LArm
-    100022: LElbow
-    100024: LFoot
-    100026: LHand
-    100028: LKnee
-    100030: LLeg
-    100032: LWrist
-    100034: Master
-    100036: Neck
-    100038: //RootNode
-    100040: RArm
-    100042: RElbow
-    100044: RFoot
-    100046: RHand
-    100048: RKnee
-    100050: RLeg
-    100052: RWrist
-    400000: HardHat
-    400002: HeadAcceseory
-    400004: joint10
-    400006: joint16
-    400008: joint20
-    400010: joint22
-    400012: joint23
-    400014: joint24
-    400016: joint8
-    400018: joint9
-    400020: LArm
-    400022: LElbow
-    400024: LFoot
-    400026: LHand
-    400028: LKnee
-    400030: LLeg
-    400032: LWrist
-    400034: Master
-    400036: Neck
-    400038: //RootNode
-    400040: RArm
-    400042: RElbow
-    400044: RFoot
-    400046: RHand
-    400048: RKnee
-    400050: RLeg
-    400052: RWrist
-    2300000: HardHat
-    3300000: HardHat
-    4300000: RagDoll
-    4300002: HardHat
-    9500000: //RootNode
-    13700000: //RootNode
-    13700002: HardHat
+    100000: //RootNode
+    100002: LuggageCTop
+    400000: //RootNode
+    400002: LuggageCTop
+    2300000: //RootNode
+    2300002: LuggageCTop
+    3300000: //RootNode
+    3300002: LuggageCTop
+    4300000: LuggageC
+    4300002: LuggageCTop
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ColorPalleteMat
     second: {fileID: 2100000, guid: c0b3d1fa0e8dd4d45b5de787bbfffe47, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: OrangeMatMat
-    second: {fileID: 2100000, guid: 4adfdf96479531b41806168e306500dc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WhiteMat
-    second: {fileID: 2100000, guid: 7e0bfd1dc97494c4f987cd4e0a3d4757, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -153,7 +92,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
