@@ -7,6 +7,8 @@ public class DestroyableObject : MonoBehaviour {
     public float magnitudeCol;
     float speed;
     Vector3 moveDirection;
+    float currentSpeed;
+    public float explosionForce = 10f;
     
 
     void Awake()
@@ -18,13 +20,18 @@ public class DestroyableObject : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
+        currentSpeed = collision.relativeVelocity.magnitude;
         if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == 0)
         {
+
+            Debug.Log(collision.gameObject.name);
+
             foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
                 if (GetComponentsInChildren<Rigidbody>() != null)
                 {
                     rb.isKinematic = false;
-                    rb.velocity = collision.relativeVelocity/2;
+                    rb.velocity = collision.relativeVelocity / 2;
+                    rb.AddForce(rb.transform.forward * magnitudeCol * explosionForce);
                 }
 
             foreach (WheelCollider col in GetComponentsInChildren<WheelCollider>())
@@ -38,8 +45,6 @@ public class DestroyableObject : MonoBehaviour {
             transform.DetachChildren();
             //   Destroy(gameObject, 0.2f);
         }
-
-   //     Debug.Log(collision.gameObject.name);
     }
 
     public void die()
@@ -48,6 +53,7 @@ public class DestroyableObject : MonoBehaviour {
             if (GetComponentsInChildren<Rigidbody>() != null)
             {
                 rb.isKinematic = false;
+                rb.AddForce(rb.transform.forward*currentSpeed*explosionForce);
             }
 
         foreach (WheelCollider col in GetComponentsInChildren<WheelCollider>())
