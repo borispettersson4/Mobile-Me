@@ -43,3 +43,4 @@ Library/InspectorExpandedItems.asset
 *.asset
 *.cache
 Library/AnnotationManager
+*.asset
