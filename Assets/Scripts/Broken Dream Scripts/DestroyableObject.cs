@@ -3,31 +3,62 @@ using System.Collections;
 
 public class DestroyableObject : MonoBehaviour {
 
-    public float health = 50f;
-    public GameObject destroyedVersion;
-    public bool destroyOnImpact = false;
+
     public float magnitudeCol;
+    float speed;
+    Vector3 moveDirection;
+    
 
-    public void takeDamage(float amount)
+    void Awake()
     {
-        health -= amount;
-
-        if (health <= 0f)
-        {
-            Destroy();
-        }
+        speed = GetComponent<Rigidbody>().velocity.magnitude;
+        moveDirection = GetComponent<Transform>().forward;
     }
+ 
 
     void OnCollisionEnter(Collision collision)
     {
-        if(destroyOnImpact)
-        Destroy();         
+        if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == 0)
+        {
+            foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
+                if (GetComponentsInChildren<Rigidbody>() != null)
+                {
+                    rb.isKinematic = false;
+                    rb.velocity = collision.relativeVelocity/2;
+                }
+
+            foreach (WheelCollider col in GetComponentsInChildren<WheelCollider>())
+                if (GetComponentsInChildren<WheelCollider>() != null)
+                    col.enabled = false;
+
+            foreach (Collider col in GetComponentsInChildren<Collider>())
+                if (GetComponentsInChildren<Collider>() != null)
+                    col.enabled = true;
+
+            transform.DetachChildren();
+            //   Destroy(gameObject, 0.2f);
+        }
+
+        Debug.Log(collision.gameObject.name);
     }
 
-    void Destroy()
+
+
+    public Vector3 Velocity
     {
-        Destroy(gameObject);
-        Instantiate(destroyedVersion, transform.position,transform.rotation);
-      //  destroyedVersion.transform.localScale = transform.localScale;
+
+        get
+        {
+            return speed * moveDirection;
+        }
+
+        set
+        {
+            speed = value.magnitude;
+            moveDirection = value.normalized;
+        }
     }
+
 }
+
+
