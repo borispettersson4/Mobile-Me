@@ -39,7 +39,26 @@ public class DestroyableObject : MonoBehaviour {
             //   Destroy(gameObject, 0.2f);
         }
 
-        Debug.Log(collision.gameObject.name);
+   //     Debug.Log(collision.gameObject.name);
+    }
+
+    public void die()
+    {
+        foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
+            if (GetComponentsInChildren<Rigidbody>() != null)
+            {
+                rb.isKinematic = false;
+            }
+
+        foreach (WheelCollider col in GetComponentsInChildren<WheelCollider>())
+            if (GetComponentsInChildren<WheelCollider>() != null)
+                col.enabled = false;
+
+        foreach (Collider col in GetComponentsInChildren<Collider>())
+            if (GetComponentsInChildren<Collider>() != null)
+                col.enabled = true;
+
+        transform.DetachChildren();
     }
 
 

@@ -37,3 +37,8 @@ Broken Dreams/Broken Dreams.Editor.Plugins.csproj
 Broken Dreams/Assets/Scenes/Game Scenes/Test Scenes/1_Starting Map/StartingMap - David.unity.meta
 Broken Dreams/Assets/Scenes/Game Scenes/Test Scenes/1_Starting Map/StartingMap - Dani.unity.meta
 Library/assetDatabase3
+Library/metadata/00/00000000000000001000000000000000
+*.txt
+Library/InspectorExpandedItems.asset
+*.asset
+*.cache
