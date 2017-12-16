@@ -18,6 +18,8 @@ ExportedObj/
 *.unityproj
 *.booproj
 
+Mobile-Me\Library
+
 # ============ #
 # OS generated #
 # ============ #
@@ -34,3 +36,4 @@ Broken Dreams/Broken Dreams.Editor.csproj
 Broken Dreams/Broken Dreams.Editor.Plugins.csproj
 Broken Dreams/Assets/Scenes/Game Scenes/Test Scenes/1_Starting Map/StartingMap - David.unity.meta
 Broken Dreams/Assets/Scenes/Game Scenes/Test Scenes/1_Starting Map/StartingMap - Dani.unity.meta
+Library/assetDatabase3
