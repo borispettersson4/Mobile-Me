@@ -47,3 +47,5 @@ Library/AnnotationManager
 Library/InspectorExpandedItems.asset
 *.asset
 Library/ScriptMapper
+Library/EditorUserBuildSettings.asset
+*.asset

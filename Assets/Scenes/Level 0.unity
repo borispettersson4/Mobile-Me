@@ -17493,6 +17493,80 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 84dec5de52f4bd142b1d239b2b0bdf2c, type: 3}
   m_PrefabInternal: {fileID: 555356908}
+--- !u!1 &556447158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 556447159}
+  - component: {fileID: 556447161}
+  - component: {fileID: 556447160}
+  m_Layer: 5
+  m_Name: Info (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &556447159
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556447158}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -266, y: -211.79999, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1744899372}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -266, y: -211.8}
+  m_SizeDelta: {x: 874.6, y: 68.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &556447160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556447158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 536318195}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 80
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Made by : Boris Pettersson & David Martinez'
+--- !u!222 &556447161
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556447158}
 --- !u!1 &557806362
 GameObject:
   m_ObjectHideFlags: 0
@@ -23646,11 +23720,9 @@ GameObject:
   - component: {fileID: 754328051}
   - component: {fileID: 754328050}
   - component: {fileID: 754328049}
-  - component: {fileID: 754328048}
   - component: {fileID: 754328047}
   - component: {fileID: 754328046}
   - component: {fileID: 754328045}
-  - component: {fileID: 754328044}
   m_Layer: 0
   m_Name: Lugger Car
   m_TagString: Car
@@ -23678,19 +23750,6 @@ Transform:
   m_Father: {fileID: 183091148}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &754328044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114552362666066004, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 754328042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31d0751d2019efe449b94e7f82bae7a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
 --- !u!114 &754328045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23733,19 +23792,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6553432, y: 0.36167717, z: 0.02469635}
   m_Center: {x: 0, y: 0.01756651, z: 0.7013283}
---- !u!114 &754328048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114616511003058188, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 754328042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95a64dc9a1b49494bbc2935ebd7afa66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mphText: {fileID: 2147465835}
 --- !u!54 &754328049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29543,8 +29589,8 @@ Camera:
   m_GameObject: {fileID: 930856556}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -57533,6 +57579,7 @@ RectTransform:
   m_Children:
   - {fileID: 2147465834}
   - {fileID: 1784564389}
+  - {fileID: 556447159}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58890,11 +58937,13 @@ MonoBehaviour:
 
     WASD to move
 
-    R to restart
+    R  restart game
 
-    X to die
+    X  insta death
 
-    C Detatch Cart'
+    C  detatch cart
+
+    Q  quit game'
 --- !u!222 &1784564391
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -68145,11 +68194,9 @@ GameObject:
   - component: {fileID: 2125405049}
   - component: {fileID: 2125405048}
   - component: {fileID: 2125405047}
-  - component: {fileID: 2125405046}
   - component: {fileID: 2125405045}
   - component: {fileID: 2125405044}
   - component: {fileID: 2125405043}
-  - component: {fileID: 2125405042}
   m_Layer: 0
   m_Name: Lugger Car
   m_TagString: Car
@@ -68177,19 +68224,6 @@ Transform:
   m_Father: {fileID: 731332602}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 80, z: 0}
---- !u!114 &2125405042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114552362666066004, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125405040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31d0751d2019efe449b94e7f82bae7a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
 --- !u!114 &2125405043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68232,19 +68266,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6553432, y: 0.36167717, z: 0.02469635}
   m_Center: {x: 0, y: 0.01756651, z: 0.7013283}
---- !u!114 &2125405046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114616511003058188, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125405040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95a64dc9a1b49494bbc2935ebd7afa66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mphText: {fileID: 2147465835}
 --- !u!54 &2125405047
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -69383,7 +69404,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2147465833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 271.6, y: -180.62, z: 0}
+  m_LocalPosition: {x: 271.6, y: -180.23999, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1744899372}
@@ -69391,8 +69412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271.6, y: -180.62}
-  m_SizeDelta: {x: 695.6, y: 109.23}
+  m_AnchoredPosition: {x: 271.6, y: -180.24}
+  m_SizeDelta: {x: 695.6, y: 106.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2147465835
 MonoBehaviour:
@@ -69415,8 +69436,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
-    m_FontStyle: 0
+    m_FontSize: 70
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300

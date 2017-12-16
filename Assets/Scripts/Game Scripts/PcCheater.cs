@@ -22,6 +22,11 @@ public class PcCheater : MonoBehaviour {
         {
             StartCoroutine(spawn(spawner));
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     bool spawnActivator = true;
