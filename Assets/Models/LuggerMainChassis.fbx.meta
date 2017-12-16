@@ -26,6 +26,9 @@ ModelImporter:
     100036: Battery
     100038: V6
     100040: WaterCollant
+    100042: LeftSkirt
+    100044: LuggerMainChassis
+    100046: RightSkirt
     400000: BackBrace
     400002: BackBumper
     400004: DriverSeat
@@ -47,6 +50,9 @@ ModelImporter:
     400036: Battery
     400038: V6
     400040: WaterCollant
+    400042: LeftSkirt
+    400044: LuggerMainChassis
+    400046: RightSkirt
     2300000: BackBrace
     2300002: BackBumper
     2300004: DriverSeat
@@ -68,6 +74,9 @@ ModelImporter:
     2300036: Battery
     2300038: V6
     2300040: WaterCollant
+    2300042: LeftSkirt
+    2300044: LuggerMainChassis
+    2300046: RightSkirt
     3300000: BackBrace
     3300002: BackBumper
     3300004: DriverSeat
@@ -89,6 +98,9 @@ ModelImporter:
     3300036: Battery
     3300038: V6
     3300040: WaterCollant
+    3300042: LeftSkirt
+    3300044: LuggerMainChassis
+    3300046: RightSkirt
     4300000: LuggerMainChassis
     4300002: FrontRightWheel
     4300004: RearRightWheel
@@ -110,6 +122,9 @@ ModelImporter:
     4300036: Battery
     4300038: V6
     4300040: WaterCollant
+    4300042: LuggerIBeam
+    4300044: LeftSkirt
+    4300046: RightSkirt
   externalObjects:
   - first:
       type: UnityEngine:Material
