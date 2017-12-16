@@ -44,7 +44,6 @@ public class DestroyableObject : MonoBehaviour {
 
             transform.DetachChildren();
             die();
-            //   Destroy(gameObject, 0.2f);
         }
     }
 
