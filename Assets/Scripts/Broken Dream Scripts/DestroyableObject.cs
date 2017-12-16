@@ -43,12 +43,18 @@ public class DestroyableObject : MonoBehaviour {
                     col.enabled = true;
 
             transform.DetachChildren();
+            die();
             //   Destroy(gameObject, 0.2f);
         }
     }
 
     public void die()
     {
+        if(GetComponent<CameraSwitcher>() != null)
+        {
+            GetComponent<CameraSwitcher>().switchCameras();
+        }
+
         foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
             if (GetComponentsInChildren<Rigidbody>() != null)
             {

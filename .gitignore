@@ -45,3 +45,5 @@ Library/InspectorExpandedItems.asset
 Library/AnnotationManager
 *.asset
 Library/InspectorExpandedItems.asset
+*.asset
+Library/ScriptMapper
