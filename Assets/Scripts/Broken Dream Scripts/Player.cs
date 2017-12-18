@@ -1,14 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyableObject : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
 
     public float magnitudeCol;
+    float speed;
+    Vector3 moveDirection;
     float currentSpeed;
     public float explosionForce = 10f;
-    
- 
+    public Collider frontImpactCol;
+    public Collider[] InstaColliders;
+
+
+    void Awake()
+    {
+        speed = GetComponent<Rigidbody>().velocity.magnitude;
+        moveDirection = GetComponent<Transform>().forward;
+    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -22,7 +32,7 @@ public class DestroyableObject : MonoBehaviour {
                 if (GetComponentsInChildren<Rigidbody>() != null)
                 {
                     rb.isKinematic = false;
-                    rb.velocity = -collision.relativeVelocity ;
+                    rb.velocity = -collision.relativeVelocity;
                     rb.AddForce(rb.transform.up * magnitudeCol * explosionForce);
                 }
 
@@ -41,7 +51,7 @@ public class DestroyableObject : MonoBehaviour {
 
     public void die()
     {
-        if(GetComponent<CameraSwitcher>() != null)
+        if (GetComponent<CameraSwitcher>() != null)
         {
             GetComponent<CameraSwitcher>().switchCameras();
         }
@@ -50,8 +60,7 @@ public class DestroyableObject : MonoBehaviour {
             if (GetComponentsInChildren<Rigidbody>() != null)
             {
                 rb.isKinematic = false;
-        //        rb.velocity = rb.transform.forward * currentSpeed;
-          //      rb.AddForce(rb.transform.forward*currentSpeed*explosionForce);
+                rb.AddForce(rb.transform.forward * currentSpeed * explosionForce);
             }
 
         foreach (WheelCollider col in GetComponentsInChildren<WheelCollider>())
@@ -64,6 +73,12 @@ public class DestroyableObject : MonoBehaviour {
 
         transform.DetachChildren();
     }
+
+    public bool isStill()
+    {
+        return (gameObject.GetComponent<Rigidbody>().velocity.magnitude <= 0.2f);
+    }
+
 
 }
 
