@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Car
   - SpeedBoost
+  - Road
+  - Grass
+  - Insta Death
   layers:
   - Default
   - TransparentFX
