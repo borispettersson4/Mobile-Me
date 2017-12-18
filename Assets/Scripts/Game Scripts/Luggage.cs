@@ -36,6 +36,12 @@ public class Luggage : MonoBehaviour {
         {
              transform.parent = null;
         }
+
+        if (isInCart())
+        {
+
+            transform.localPosition = new Vector3(transform.localPosition.x, Mathf.Clamp(transform.localPosition.y, 0.38f, 1), transform.localPosition.z);
+        }
     }
 
     public bool isInCart()
