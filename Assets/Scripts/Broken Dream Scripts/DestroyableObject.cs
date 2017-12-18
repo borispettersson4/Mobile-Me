@@ -7,6 +7,7 @@ public class DestroyableObject : MonoBehaviour {
     public float magnitudeCol;
     float currentSpeed;
     public float explosionForce = 10f;
+    protected bool isDead = false;
     
  
 
@@ -36,11 +37,14 @@ public class DestroyableObject : MonoBehaviour {
 
             transform.DetachChildren();
             die();
+            isDead = true;
         }
     }
 
     public void die()
     {
+        isDead = true; 
+
         if(GetComponent<CameraSwitcher>() != null)
         {
             GetComponent<CameraSwitcher>().switchCameras();
@@ -63,6 +67,11 @@ public class DestroyableObject : MonoBehaviour {
                 col.enabled = true;
 
         transform.DetachChildren();
+    }
+
+    public bool isDestroyed()
+    {
+        return isDead;
     }
 
 }
