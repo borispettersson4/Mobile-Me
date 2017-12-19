@@ -6,6 +6,7 @@ public class GUIManager : MonoBehaviour {
 
     public GameObject gameGUI;
     public GameObject deathGUI;
+    public GameObject finishGUI;
 
     public void hideGUI()
     {
@@ -15,6 +16,11 @@ public class GUIManager : MonoBehaviour {
     public void playDeathGUI()
     {
         deathGUI.SetActive(true);
+    }
+
+    public void playFinishGUI()
+    {
+        finishGUI.SetActive(true);
     }
 
 }

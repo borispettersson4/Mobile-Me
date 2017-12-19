@@ -32,4 +32,9 @@ public class LuggerCounter : MonoBehaviour {
     {
         return luggageCount;
     }
+
+    public bool isFull()
+    {
+        return (luggageCount >= luggage.Length);
+    }
 }

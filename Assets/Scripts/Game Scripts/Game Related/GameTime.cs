@@ -7,8 +7,9 @@ using System;
 public class GameTime : MonoBehaviour {
 
     public Text timerGUI;
-    public int time = 30;
+    public int time = 0;
     TimeSpan timeSpan;
+    public int targetTime = 60;
 
     void Awake()
     {
@@ -21,6 +22,11 @@ public class GameTime : MonoBehaviour {
         string timeFormat = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds); 
 
         timerGUI.text = string.Format("{0}:{1:00}",(int)timeSpan.TotalMinutes, timeSpan.Seconds);
+
+        if(timeSpan.TotalSeconds > targetTime)
+        {
+            timerGUI.color = Color.red + Color.white;
+        }
     }
 
     IEnumerator countDown()
@@ -33,6 +39,11 @@ public class GameTime : MonoBehaviour {
     public void timerStop()
     {
         StopCoroutine(countDown());
+    }
+
+    public bool isInTime()
+    {
+        return (timeSpan.TotalSeconds < targetTime);
     }
 
 }

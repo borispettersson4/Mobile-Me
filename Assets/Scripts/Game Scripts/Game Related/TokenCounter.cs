@@ -30,4 +30,9 @@ public class TokenCounter : MonoBehaviour
     {
         tokenCount += i;
     }
+
+    public bool isFull()
+    {
+        return (tokenCount >= totalTokenCount);
+    }
 }
