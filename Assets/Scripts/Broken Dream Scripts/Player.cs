@@ -8,6 +8,11 @@ public class Player : DestroyableObject
     public GameObject lugger;
     public GUIManager guiManager;
 
+    void Awake()
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
         if (isDead)

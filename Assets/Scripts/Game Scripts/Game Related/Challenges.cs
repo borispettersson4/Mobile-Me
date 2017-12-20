@@ -29,25 +29,34 @@ public class Challenges : MonoBehaviour {
     public Text totalLuggage;
     public Text totalCoins;
 
-    void Update()
+    void Awake()
     {
-
         //Star Monitor
 
         if (time.isInTime())
+        {
             timeStar.sprite = successStar;
+            PlayerPrefs.SetInt("timeJ" + levelNumber,1);
+        }
         else
             timeStar.sprite = failStar;
 
         if (luggageCount.isFull())
+        {
             luggageStar.sprite = successStar;
+            PlayerPrefs.SetInt("luggageJ" + levelNumber, 1);
+        }
         else
             luggageStar.sprite = failStar;
 
         if (tokenCount.isFull())
+        {
             coinStar.sprite = successStar;
+            PlayerPrefs.SetInt("tokenJ" + levelNumber, 1);
+        }
         else
             coinStar.sprite = failStar;
+
 
 
         //Data Transfer

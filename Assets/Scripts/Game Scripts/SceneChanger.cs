@@ -12,13 +12,22 @@ public class SceneChanger : MonoBehaviour {
 
     public void goToScene(string s)
     {
-        SceneManager.UnloadScene(SceneManager.GetActiveScene());
-        SceneManager.LoadScene(s);
+        //   SceneManager.UnloadScene(SceneManager.GetActiveScene());
+        //  SceneManager.LoadScene(s);
+        StartCoroutine(goToSceneDelayed(s));
     }
 
     public void exitGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator goToSceneDelayed(string s)
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.UnloadScene(SceneManager.GetActiveScene());
+        SceneManager.LoadScene(s);
     }
 
 
