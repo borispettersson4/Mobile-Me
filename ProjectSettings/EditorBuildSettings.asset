@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level 5.unity
     guid: e18dfa78218426d43b506cbbe9733ae7
+  - enabled: 1
+    path: Assets/Scenes/Levels/TheAirport.unity
+    guid: 3e6c9ec39c0d7184e9097debc6b6ce32
