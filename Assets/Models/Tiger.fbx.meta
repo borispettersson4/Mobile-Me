@@ -25,6 +25,9 @@ ModelImporter:
     100034: TigerNeck
     100036: TigerRightFrontLeg
     100038: TigerTail
+    100040: joint21
+    100042: joint22
+    100044: Master
     400000: joint10
     400002: joint12
     400004: joint13
@@ -45,6 +48,9 @@ ModelImporter:
     400034: TigerNeck
     400036: TigerRightFrontLeg
     400038: TigerTail
+    400040: joint21
+    400042: joint22
+    400044: Master
     4300000: Tiger
     9500000: //RootNode
     13700000: //RootNode

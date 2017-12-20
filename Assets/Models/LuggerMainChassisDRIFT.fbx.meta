@@ -26,6 +26,7 @@ ModelImporter:
     100036: SteeringWheel
     100038: V6
     100040: WaterCollant
+    100042: DriftSpoiler
     400000: BackBrace
     400002: BackBumper
     400004: Battery
@@ -47,6 +48,7 @@ ModelImporter:
     400036: SteeringWheel
     400038: V6
     400040: WaterCollant
+    400042: DriftSpoiler
     2300000: BackBrace
     2300002: BackBumper
     2300004: Battery
@@ -68,6 +70,7 @@ ModelImporter:
     2300036: SteeringWheel
     2300038: V6
     2300040: WaterCollant
+    2300042: DriftSpoiler
     3300000: BackBrace
     3300002: BackBumper
     3300004: Battery
@@ -89,6 +92,7 @@ ModelImporter:
     3300036: SteeringWheel
     3300038: V6
     3300040: WaterCollant
+    3300042: DriftSpoiler
     4300000: LuggerMainChassisDRIFT
     4300002: RearLeftWheel
     4300004: RearRightWheel
@@ -110,6 +114,7 @@ ModelImporter:
     4300036: WaterCollant
     4300038: Exhaust
     4300040: CartPuller
+    4300042: DriftSpoiler
     9500000: //RootNode
   externalObjects:
   - first:
