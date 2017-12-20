@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: ee2f01b4891aaa64993a87b1178e104f
+timeCreated: 1513806139
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: LuggerSport_Battery
+    100002: LuggerSport_CartPuller
+    100004: LuggerSport_Coolent
+    100006: LuggerSport_Dashboard
+    100008: LuggerSport_DriverSeat
+    100010: LuggerSport_Engine
+    100012: LuggerSport_EngineBay
+    100014: LuggerSport_FrontBumper
+    100016: LuggerSport_FrontLeftWheel
+    100018: LuggerSport_FrontRightWheel
+    100020: LuggerSport_PassengerSeat
+    100022: LuggerSport_RearLeftWheel
+    100024: LuggerSport_RearRightWheel
+    100026: LuggerSport_Spoiler
+    100028: LuggerSport_Steeringwheel
+    100030: //RootNode
+    400000: LuggerSport_Battery
+    400002: LuggerSport_CartPuller
+    400004: LuggerSport_Coolent
+    400006: LuggerSport_Dashboard
+    400008: LuggerSport_DriverSeat
+    400010: LuggerSport_Engine
+    400012: LuggerSport_EngineBay
+    400014: LuggerSport_FrontBumper
+    400016: LuggerSport_FrontLeftWheel
+    400018: LuggerSport_FrontRightWheel
+    400020: LuggerSport_PassengerSeat
+    400022: LuggerSport_RearLeftWheel
+    400024: LuggerSport_RearRightWheel
+    400026: LuggerSport_Spoiler
+    400028: LuggerSport_Steeringwheel
+    400030: //RootNode
+    2300000: LuggerSport_Battery
+    2300002: LuggerSport_CartPuller
+    2300004: LuggerSport_Coolent
+    2300006: LuggerSport_Dashboard
+    2300008: LuggerSport_DriverSeat
+    2300010: LuggerSport_Engine
+    2300012: LuggerSport_EngineBay
+    2300014: LuggerSport_FrontBumper
+    2300016: LuggerSport_FrontLeftWheel
+    2300018: LuggerSport_FrontRightWheel
+    2300020: LuggerSport_PassengerSeat
+    2300022: LuggerSport_RearLeftWheel
+    2300024: LuggerSport_RearRightWheel
+    2300026: LuggerSport_Spoiler
+    2300028: LuggerSport_Steeringwheel
+    2300030: //RootNode
+    3300000: LuggerSport_Battery
+    3300002: LuggerSport_CartPuller
+    3300004: LuggerSport_Coolent
+    3300006: LuggerSport_Dashboard
+    3300008: LuggerSport_DriverSeat
+    3300010: LuggerSport_Engine
+    3300012: LuggerSport_EngineBay
+    3300014: LuggerSport_FrontBumper
+    3300016: LuggerSport_FrontLeftWheel
+    3300018: LuggerSport_FrontRightWheel
+    3300020: LuggerSport_PassengerSeat
+    3300022: LuggerSport_RearLeftWheel
+    3300024: LuggerSport_RearRightWheel
+    3300026: LuggerSport_Spoiler
+    3300028: LuggerSport_Steeringwheel
+    3300030: //RootNode
+    4300000: LuggerSportChassis
+    4300002: LuggerSport_CartPuller
+    4300004: LuggerSport_Steeringwheel
+    4300006: LuggerSport_DriverSeat
+    4300008: LuggerSport_PassengerSeat
+    4300010: LuggerSport_FrontBumper
+    4300012: LuggerSport_Dashboard
+    4300014: LuggerSport_EngineBay
+    4300016: LuggerSport_Coolent
+    4300018: LuggerSport_Engine
+    4300020: LuggerSport_Battery
+    4300022: LuggerSport_Spoiler
+    4300024: LuggerSport_FrontLeftWheel
+    4300026: LuggerSport_RearLeftWheel
+    4300028: LuggerSport_RearRightWheel
+    4300030: LuggerSport_FrontRightWheel
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ColorPalleteMat
+    second: {fileID: 2100000, guid: c0b3d1fa0e8dd4d45b5de787bbfffe47, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
