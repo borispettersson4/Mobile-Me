@@ -9,16 +9,16 @@ public class TokenCounter : MonoBehaviour
     int tokenCount = 0;
     public int totalTokenCount = 0;
     public Text currentTokens;
-    public Text totalTokens;
+    int totalTokens;
 
     void Awake()
     {
-        totalTokens.text = totalTokenCount + "";
+        totalTokens = totalTokenCount;
     }
 
     void Update()
     {
-        currentTokens.text = tokenCount + "";
+        currentTokens.text = tokenCount + " / " + totalTokenCount;
     }
 
     public int getTokenCount()

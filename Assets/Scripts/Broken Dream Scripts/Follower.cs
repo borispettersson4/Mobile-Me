@@ -10,11 +10,16 @@ using UnityEngine;
         public float smoothRotScale = 0;
         public Transform lookTarget;
 
+    void Awake()
+    {
+        transform.LookAt(lookTarget);
+    }
+
 
         private void LateUpdate()
         {
         transform.position = Vector3.Lerp(transform.position, target.position + offset, smoothScale * Time.deltaTime);
-        if (copyRotation)
-            transform.LookAt(lookTarget);
-        }
+        transform.LookAt(lookTarget);
+   //     transform.RotateAround(Vector3.zero, Vector3.up, 20 * Time.deltaTime);
+    }
     }

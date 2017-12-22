@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CameraSwitcher : MonoBehaviour {
     
-    public Camera camA;
-    public Camera camB;
+    public Camera cam;
+    public Transform a;
 
     public void switchCameras()
     {
-        camA.gameObject.SetActive(false);
-        camB.gameObject.SetActive(true);
+        cam.GetComponent<SmoothFollow2>().target = a;
+        cam.GetComponent<SmoothFollow2>().rotationDamping = 0;
+
     }
 
 }

@@ -8,11 +8,11 @@ public class LuggerCounter : MonoBehaviour {
     public Luggage[] luggage;
     int luggageCount = 0;
     public Text currentLuggage;
-    public Text totalLuggage;
+    int totalLuggage;
 
     void Awake()
     {
-        totalLuggage.text = "" + luggage.Length;
+        totalLuggage = luggage.Length;
     }
 
     void Update()
@@ -24,7 +24,7 @@ public class LuggerCounter : MonoBehaviour {
             if (luggage[i].isInCart())
                 current++;
             luggageCount = Mathf.Clamp(current, 0, luggage.Length);
-            currentLuggage.text = luggageCount + "";
+            currentLuggage.text = luggageCount + " / " + totalLuggage;
         }
     }
 

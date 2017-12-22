@@ -11,7 +11,7 @@ public class Telemetry : MonoBehaviour {
 	void Update () {
         float forwardSpeed = transform.InverseTransformDirection(GetComponent<Rigidbody>().velocity).z;
         float mph = forwardSpeed / 0.44704f;
-        mphText.text = "SPEED : " + (int)mph + " MPH";
+        mphText.text = (int)mph + "";
 
     }
 }
