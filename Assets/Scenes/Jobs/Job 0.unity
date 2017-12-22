@@ -20398,7 +20398,6 @@ GameObject:
   - component: {fileID: 469238132}
   - component: {fileID: 469238131}
   - component: {fileID: 469238130}
-  - component: {fileID: 469238129}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -20424,38 +20423,6 @@ Transform:
   m_Father: {fileID: 1654470764}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &469238129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469238127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 1374875296}
-    leftWheelMesh: {fileID: 1374875294}
-    rightWheel: {fileID: 2141066005}
-    rightWheelMesh: {fileID: 2141066003}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 1955081271}
-    leftWheelMesh: {fileID: 1955081269}
-    rightWheel: {fileID: 1292219788}
-    rightWheelMesh: {fileID: 1292219786}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &469238130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29518,7 +29485,6 @@ GameObject:
   - component: {fileID: 664259037}
   - component: {fileID: 664259036}
   - component: {fileID: 664259035}
-  - component: {fileID: 664259034}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -29544,38 +29510,6 @@ Transform:
   m_Father: {fileID: 1396440615}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &664259034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 664259032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 245448090}
-    leftWheelMesh: {fileID: 245448088}
-    rightWheel: {fileID: 1699578077}
-    rightWheelMesh: {fileID: 1699578075}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 1140710291}
-    leftWheelMesh: {fileID: 1140710289}
-    rightWheel: {fileID: 1232188202}
-    rightWheelMesh: {fileID: 1232188200}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &664259035
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53506,7 +53440,6 @@ GameObject:
   - component: {fileID: 1228080631}
   - component: {fileID: 1228080630}
   - component: {fileID: 1228080629}
-  - component: {fileID: 1228080628}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -53532,38 +53465,6 @@ Transform:
   m_Father: {fileID: 2021432919}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1228080628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1228080626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 1278352872}
-    leftWheelMesh: {fileID: 1278352870}
-    rightWheel: {fileID: 1247865238}
-    rightWheelMesh: {fileID: 1247865236}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 136243820}
-    leftWheelMesh: {fileID: 136243818}
-    rightWheel: {fileID: 1590408733}
-    rightWheelMesh: {fileID: 1590408731}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &1228080629
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -61737,7 +61638,6 @@ GameObject:
   - component: {fileID: 1439655157}
   - component: {fileID: 1439655156}
   - component: {fileID: 1439655155}
-  - component: {fileID: 1439655154}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -61763,38 +61663,6 @@ Transform:
   m_Father: {fileID: 1292467192}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1439655154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1439655152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 592501593}
-    leftWheelMesh: {fileID: 592501591}
-    rightWheel: {fileID: 1680959945}
-    rightWheelMesh: {fileID: 1680959943}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 271577259}
-    leftWheelMesh: {fileID: 271577257}
-    rightWheel: {fileID: 1226553840}
-    rightWheelMesh: {fileID: 1226553838}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &1439655155
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -66723,7 +66591,6 @@ GameObject:
   - component: {fileID: 1550061398}
   - component: {fileID: 1550061397}
   - component: {fileID: 1550061396}
-  - component: {fileID: 1550061395}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -66749,38 +66616,6 @@ Transform:
   m_Father: {fileID: 293290678}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1550061395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1550061393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 624845865}
-    leftWheelMesh: {fileID: 624845863}
-    rightWheel: {fileID: 1249028154}
-    rightWheelMesh: {fileID: 1249028152}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 516350197}
-    leftWheelMesh: {fileID: 516350195}
-    rightWheel: {fileID: 561152261}
-    rightWheelMesh: {fileID: 561152259}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &1550061396
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -69052,7 +68887,6 @@ GameObject:
   - component: {fileID: 1599929745}
   - component: {fileID: 1599929744}
   - component: {fileID: 1599929743}
-  - component: {fileID: 1599929742}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -69078,38 +68912,6 @@ Transform:
   m_Father: {fileID: 492992898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1599929742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1599929740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 468304124}
-    leftWheelMesh: {fileID: 468304122}
-    rightWheel: {fileID: 543852136}
-    rightWheelMesh: {fileID: 543852134}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 395842438}
-    leftWheelMesh: {fileID: 395842436}
-    rightWheel: {fileID: 1740861728}
-    rightWheelMesh: {fileID: 1740861726}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &1599929743
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -69180,7 +68982,6 @@ GameObject:
   - component: {fileID: 1600592815}
   - component: {fileID: 1600592814}
   - component: {fileID: 1600592813}
-  - component: {fileID: 1600592812}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -69206,38 +69007,6 @@ Transform:
   m_Father: {fileID: 548689927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1600592812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1600592810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 1492917762}
-    leftWheelMesh: {fileID: 1492917760}
-    rightWheel: {fileID: 567483989}
-    rightWheelMesh: {fileID: 567483987}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 672668261}
-    leftWheelMesh: {fileID: 672668259}
-    rightWheel: {fileID: 823474413}
-    rightWheelMesh: {fileID: 823474411}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &1600592813
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -84811,7 +84580,6 @@ GameObject:
   - component: {fileID: 1989662551}
   - component: {fileID: 1989662550}
   - component: {fileID: 1989662549}
-  - component: {fileID: 1989662548}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -84837,38 +84605,6 @@ Transform:
   m_Father: {fileID: 500096308}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1989662548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114447741334357476, guid: a5d403464dd72e04dbdb5500845048f3,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1989662546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 15
-  maxSteeringAngle: 0
-  car_Infos:
-  - leftWheel: {fileID: 930979801}
-    leftWheelMesh: {fileID: 930979799}
-    rightWheel: {fileID: 798333100}
-    rightWheelMesh: {fileID: 798333098}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  - leftWheel: {fileID: 669812655}
-    leftWheelMesh: {fileID: 669812653}
-    rightWheel: {fileID: 1376473010}
-    rightWheelMesh: {fileID: 1376473008}
-    motor: 1
-    steering: 0
-    reverseTurn: 0
-  gas: {fileID: 0}
-  brake: {fileID: 0}
-  wheel: {fileID: 0}
 --- !u!64 &1989662549
 MeshCollider:
   m_ObjectHideFlags: 0
