@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Training/Training 0.unity
-    guid: 65828559fb3224b4b83894b24efb0abf
+    path: Assets/Scenes/AirportMain.unity
+    guid: 0d1ac9e3edad36f48aac014f6dd6e0f1
   - enabled: 1
     path: Assets/Scenes/Jobs/Job 0.unity
     guid: 09fbe60b6c04c0740ad1f30c44a71998
-  - enabled: 1
-    path: Assets/Scenes/AirportMain.unity
-    guid: 0d1ac9e3edad36f48aac014f6dd6e0f1

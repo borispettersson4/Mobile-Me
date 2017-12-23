@@ -7050,8 +7050,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 368167388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 706.26294, y: 345.02512, z: -15.85489}
-  m_LocalScale: {x: 1.48875, y: 1.48875, z: 1.48875}
+  m_LocalPosition: {x: 1590.763, y: 730.0251, z: -15.85489}
+  m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_Children:
   - {fileID: 429599157}
   - {fileID: 1615685682}
@@ -14089,6 +14089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751469531}
   - component: {fileID: 751469532}
+  - component: {fileID: 751469533}
   m_Layer: 0
   m_Name: Main Menu
   m_TagString: Untagged
@@ -14131,6 +14132,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &751469533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751469530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55bfe65a1fc858d439369abe7e7198ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753430252
 GameObject:
   m_ObjectHideFlags: 0
@@ -19578,6 +19590,14 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709857980973974, guid: 259907771a8624347bc93a4da30c34f6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550735353059476, guid: 259907771a8624347bc93a4da30c34f6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 259907771a8624347bc93a4da30c34f6, type: 2}
