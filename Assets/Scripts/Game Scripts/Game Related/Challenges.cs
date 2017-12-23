@@ -8,6 +8,8 @@ public class Challenges : MonoBehaviour {
 
     public int levelNumber; // For Player Prefs & Saving
 
+    public bool isTraining = false;
+
     public GameTime time;
     public LuggerCounter luggageCount;
     public TokenCounter tokenCount;
@@ -33,31 +35,38 @@ public class Challenges : MonoBehaviour {
     {
         //Star Monitor
 
-        if (time.isInTime())
+        if (isTraining)
         {
-            timeStar.sprite = successStar;
-            PlayerPrefs.SetInt("timeJ" + levelNumber,1);
+
+            if (time.isInTime())
+            {
+                timeStar.sprite = successStar;
+                PlayerPrefs.SetInt("timeJ" + levelNumber, 1);
+            }
+            else
+                timeStar.sprite = failStar;
+
+            if (luggageCount.isFull())
+            {
+                luggageStar.sprite = successStar;
+                PlayerPrefs.SetInt("luggageJ" + levelNumber, 1);
+            }
+            else
+                luggageStar.sprite = failStar;
+
+            if (tokenCount.isFull())
+            {
+                coinStar.sprite = successStar;
+                PlayerPrefs.SetInt("tokenJ" + levelNumber, 1);
+            }
+            else
+                coinStar.sprite = failStar;
         }
         else
-            timeStar.sprite = failStar;
-
-        if (luggageCount.isFull())
         {
             luggageStar.sprite = successStar;
-            PlayerPrefs.SetInt("luggageJ" + levelNumber, 1);
+            PlayerPrefs.SetInt("training" + levelNumber, 1);
         }
-        else
-            luggageStar.sprite = failStar;
-
-        if (tokenCount.isFull())
-        {
-            coinStar.sprite = successStar;
-            PlayerPrefs.SetInt("tokenJ" + levelNumber, 1);
-        }
-        else
-            coinStar.sprite = failStar;
-
-
 
         //Data Transfer
 
@@ -75,6 +84,9 @@ public class Challenges : MonoBehaviour {
 
         currentCoins.text = tokenCount.getTokenCount() + "";
         totalCoins.text = tokenCount.totalTokenCount + "";
+
+        //Set the training gui so that the only star available is shown via player prefs so that the player can view progress
+
 
     }
 
