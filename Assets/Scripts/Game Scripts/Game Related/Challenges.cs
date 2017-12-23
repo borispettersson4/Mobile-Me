@@ -6,6 +6,8 @@ using System;
 
 public class Challenges : MonoBehaviour {
 
+    public GameObject deathGUI;
+
     public int levelNumber; // For Player Prefs & Saving
 
     public bool isTraining = false;
@@ -33,9 +35,14 @@ public class Challenges : MonoBehaviour {
 
     void Awake()
     {
+
+        if(deathGUI != null)
+        {
+            Destroy(deathGUI);
+        }
         //Star Monitor
 
-        if (isTraining)
+        if (!isTraining)
         {
 
             if (time.isInTime())

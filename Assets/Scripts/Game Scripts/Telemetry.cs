@@ -6,12 +6,18 @@ using UnityEngine.UI;
 public class Telemetry : MonoBehaviour {
 
     public Text mphText;
+    float mph;
 
 	
 	void Update () {
         float forwardSpeed = transform.InverseTransformDirection(GetComponent<Rigidbody>().velocity).z;
-        float mph = forwardSpeed / 0.44704f;
+        mph = forwardSpeed / 0.44704f;
         mphText.text = (int)mph + "";
 
+    }
+
+    public float getSpeed()
+    {
+        return mph;
     }
 }
