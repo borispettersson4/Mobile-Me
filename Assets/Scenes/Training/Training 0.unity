@@ -11758,6 +11758,10 @@ Prefab:
       propertyPath: isTraining
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1591773934194410, guid: 32e96b43f74541144836328f10f1d785, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114560244974115260, guid: 32e96b43f74541144836328f10f1d785, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 32e96b43f74541144836328f10f1d785, type: 2}
