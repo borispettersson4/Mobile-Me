@@ -227,8 +227,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Boris/Desktop/Development/Mobile Me/Mobile-Me/user.keystore
+  AndroidKeyaliasName: boris
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0

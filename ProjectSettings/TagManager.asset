@@ -9,6 +9,7 @@ TagManager:
   - Road
   - Grass
   - Insta Death
+  - Oil
   layers:
   - Default
   - TransparentFX
