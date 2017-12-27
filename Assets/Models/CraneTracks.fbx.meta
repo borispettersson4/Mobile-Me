@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 06a989a0ad51c6049a708e20c47d9c23
+timeCreated: 1514332407
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ArmA
+    100002: ArmB
+    100004: ArmC
+    100006: CraneChassis
+    100008: //RootNode
+    100010: Magnet
+    100012: Reel
+    100014: Rotater
+    100016: RotaterReel
+    400000: ArmA
+    400002: ArmB
+    400004: ArmC
+    400006: CraneChassis
+    400008: //RootNode
+    400010: Magnet
+    400012: Reel
+    400014: Rotater
+    400016: RotaterReel
+    2300000: ArmA
+    2300002: ArmB
+    2300004: ArmC
+    2300006: CraneChassis
+    2300008: //RootNode
+    2300010: Magnet
+    2300012: Reel
+    2300014: Rotater
+    2300016: RotaterReel
+    3300000: ArmA
+    3300002: ArmB
+    3300004: ArmC
+    3300006: CraneChassis
+    3300008: //RootNode
+    3300010: Magnet
+    3300012: Reel
+    3300014: Rotater
+    3300016: RotaterReel
+    4300000: CraneTracks
+    4300002: CraneChassis
+    4300004: Rotater
+    4300006: ArmA
+    4300008: ArmB
+    4300010: ArmC
+    4300012: RotaterReel
+    4300014: Reel
+    4300016: Magnet
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ColorPalleteMat
+    second: {fileID: 2100000, guid: c0b3d1fa0e8dd4d45b5de787bbfffe47, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
