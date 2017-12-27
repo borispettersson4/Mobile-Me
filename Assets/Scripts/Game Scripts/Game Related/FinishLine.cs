@@ -7,16 +7,39 @@ public class FinishLine : MonoBehaviour {
 
     public GUIManager manager;
     public Player player;
+    bool isInLine = false;
 
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Car" && !player.isDestroyed() & player.isStill())
+        if (col.gameObject.tag == "Car" && !player.isDestroyed())
         {
-            manager.hideGUI();
-            manager.playFinishGUI();
+            isInLine = true;
         }
 
     }
 
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.tag == "Car" && !player.isDestroyed())
+        {
+            isInLine = false;
+        }
+
+    }
+
+    void Update()
+    {
+        if(player.GetComponent<Telemetry>().getSpeed() < 1 && isInLine)
+        {
+            finish();
+        }
+    }
+
+    void finish()
+    {
+        isInLine = false;
+        manager.hideGUI();
+        manager.playFinishGUI();
+    }
 }
