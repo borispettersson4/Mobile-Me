@@ -7,10 +7,12 @@ public class Player : DestroyableObject
     float currentSpeed;
     public GameObject lugger;
     public GUIManager guiManager;
+    CarController carCon;
 
     void Awake()
     {
         Time.timeScale = 1;
+        carCon = GetComponent<CarController>();
     }
 
     void Update()
@@ -21,6 +23,8 @@ public class Player : DestroyableObject
             if(isStill())
                 guiManager.playDeathGUI();
         }
+
+
     }
 
     public bool isStill()

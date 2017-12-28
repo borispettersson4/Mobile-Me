@@ -32,7 +32,9 @@ public class ExtraCarController : MonoBehaviour
         if (col.gameObject.GetComponent<SpeedBoost>() != null)
         {
             controller.maxMotorTorque = torqueSpeed + col.gameObject.GetComponent<SpeedBoost>().speedBoostAmount;
-            StartCoroutine(freezeRot());
+
+            if (col.gameObject.GetComponent<SpeedBoost>().freezeRot)
+                StartCoroutine(freezeRot());
         }
     }
 

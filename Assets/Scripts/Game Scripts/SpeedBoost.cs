@@ -5,5 +5,6 @@ using UnityEngine;
 public class SpeedBoost : MonoBehaviour {
 
     public float speedBoostAmount = 60f;
+    public bool freezeRot = false;
 
 }
