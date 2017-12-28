@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FinishLine : MonoBehaviour {
 
@@ -43,3 +44,27 @@ public class FinishLine : MonoBehaviour {
         manager.playFinishGUI();
     }
 }
+
+public class TouchControl : MonoBehaviour
+{
+
+
+    public KeyCode A;
+
+    public Button TouchCtrl;
+
+    void Start()
+    {
+        TouchCtrl = GetComponent<Button>();
+    }
+
+    void Update()
+    {
+        if (Input.GetButton("Jump"))
+        {
+
+        }
+    }
+
+
+} //End
