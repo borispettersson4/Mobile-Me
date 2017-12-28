@@ -9,12 +9,12 @@ public class DestroyableObject : MonoBehaviour {
     public float explosionForce = 10f;
     protected bool isDead = false;
     public int layerNumber = 0;
-    public bool isTriggerMode = false;
+    public bool isParentTrigger = false;
     
     void OnCollisionEnter(Collision collision)
     {
         currentSpeed = collision.relativeVelocity.magnitude;
-        if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == layerNumber && !isTriggerMode)
+        if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == layerNumber && !isParentTrigger)
         {
 
             Debug.Log(collision.gameObject.name);
@@ -39,21 +39,24 @@ public class DestroyableObject : MonoBehaviour {
             die();
             isDead = true;
         }
-    }
 
-    void OnTriggerEnter(Collider collision)
-    {
-        if (collision.gameObject.layer == layerNumber && isTriggerMode)
+        else if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == layerNumber && isParentTrigger)
         {
-
             foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
                 if (GetComponentsInChildren<Rigidbody>() != null)
                 {
                     rb.isKinematic = false;
+                    GetComponentInParent<DestroyableObject>().die();
+                    rb.velocity = -collision.relativeVelocity;
                     rb.AddForce(rb.transform.up * magnitudeCol * explosionForce);
                 }
 
-            transform.DetachChildren();
+            foreach (Collider col in GetComponentsInChildren<Collider>())
+                if (GetComponentsInChildren<Collider>() != null)
+                    col.enabled = true;
+
+      //      transform.DetachChildren();
+     //       die();
             isDead = true;
         }
     }

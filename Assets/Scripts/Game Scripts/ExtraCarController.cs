@@ -18,7 +18,7 @@ public class ExtraCarController : MonoBehaviour
         else
             gameObject.GetComponent<Rigidbody>().freezeRotation = false;
 
-        Debug.Log(GetComponent<Rigidbody>().rotation);
+   //     Debug.Log(GetComponent<Rigidbody>().rotation);
     }
 
     void Awake()
