@@ -8,13 +8,12 @@ public class DestroyableObject : MonoBehaviour {
     float currentSpeed;
     public float explosionForce = 10f;
     protected bool isDead = false;
+    public int layerNumber = 0;
     
- 
-
     void OnCollisionEnter(Collision collision)
     {
         currentSpeed = collision.relativeVelocity.magnitude;
-        if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == 0)
+        if (collision.relativeVelocity.magnitude > magnitudeCol && collision.gameObject.layer == layerNumber)
         {
 
             Debug.Log(collision.gameObject.name);
