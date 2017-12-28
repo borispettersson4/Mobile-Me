@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ExtraCarController : MonoBehaviour
 {
-
     public CarController controller;
     float torqueSpeed;
     bool rotFreeze = false;
@@ -29,7 +28,7 @@ public class ExtraCarController : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.GetComponent<SpeedBoost>() != null)
+        if (col.gameObject.GetComponent<SpeedBoost>() != null && !col.gameObject.GetComponent<SpeedBoost>().triggerMode)
         {
             controller.maxMotorTorque = torqueSpeed + col.gameObject.GetComponent<SpeedBoost>().speedBoostAmount;
 
@@ -38,10 +37,28 @@ public class ExtraCarController : MonoBehaviour
         }
     }
 
-
     void OnCollisionExit(Collision col)
     {
-        if (col.gameObject.GetComponent<SpeedBoost>() != null)
+        if (col.gameObject.GetComponent<SpeedBoost>() != null && !col.gameObject.GetComponent<SpeedBoost>().triggerMode)
+        {
+            controller.maxMotorTorque = torqueSpeed;
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.GetComponent<SpeedBoost>() != null && col.gameObject.GetComponent<SpeedBoost>().triggerMode)
+        {
+            controller.maxMotorTorque = torqueSpeed + col.gameObject.GetComponent<SpeedBoost>().speedBoostAmount;
+
+            if (col.gameObject.GetComponent<SpeedBoost>().freezeRot)
+                StartCoroutine(freezeRot());
+        }
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.GetComponent<SpeedBoost>() != null && col.gameObject.GetComponent<SpeedBoost>().triggerMode)
         {
             controller.maxMotorTorque = torqueSpeed;
         }

@@ -34,7 +34,6 @@ public class WheelGripMonitor : MonoBehaviour
         }
     }
 
-
     void Update()
     {
         for (int i = 0; i < wheels.Length; i++)
