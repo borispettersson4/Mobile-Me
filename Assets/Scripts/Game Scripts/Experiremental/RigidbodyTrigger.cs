@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RigidbodyTrigger : MonoBehaviour {
 
-    public Rigidbody Collider;
+    public Rigidbody RigidObj;
 
     public GameObject Chassis;
 
@@ -14,7 +14,7 @@ public class RigidbodyTrigger : MonoBehaviour {
         {
 
 
-            Collider.isKinematic = false;
+            RigidObj.isKinematic = false;
 
 
         }
