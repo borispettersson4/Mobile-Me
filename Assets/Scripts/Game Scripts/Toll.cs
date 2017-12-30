@@ -17,22 +17,22 @@ public class Toll : MonoBehaviour {
     {
         if (col.gameObject == player.gameObject)
         {
-            if (tokenCounter.getTokenCount() >= tokenCount)
-            {
                 guiComponent.SetActive(true);  
                 if(player.GetComponent<Rigidbody>().velocity.magnitude != 0)
                 {
                     player.GetComponent<Rigidbody>().velocity.Normalize();
                     player.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
-                }
-            }
+                }           
         }
     }
 
     public void accept()
     {
-        guiComponent.SetActive(false);
-        animator.Play(animationA);
+        if (tokenCounter.getTokenCount() >= tokenCount)
+        {
+            guiComponent.SetActive(false);
+            animator.Play(animationA);
+        }
     }
 
     public void deny()
