@@ -30,9 +30,9 @@ public class Toll : MonoBehaviour {
     {
         if (tokenCounter.getTokenCount() >= tokenCount)
         {
+            tokenCounter.substractTokens(tokenCount);
             guiComponent.SetActive(false);
             animator.Play(animationA);
-            tokenCounter.substractTokens(tokenCount);
         }
     }
 
