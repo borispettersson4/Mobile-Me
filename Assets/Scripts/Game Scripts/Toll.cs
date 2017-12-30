@@ -6,16 +6,17 @@ public class Toll : MonoBehaviour {
 
     public TokenCounter tokenCounter;
     public Animation animationClip;
+    public Player player;
     public float tokenCount;
 
-    bool active1 = true;
-
-    void Update()
+    void OnTriggerEnter(Collider col)
     {
-        if(tokenCounter.getTokenCount() >= tokenCount && active1)
+        if (col.gameObject == player.gameObject)
         {
-            active1 = false;
-            GetComponent<Animator>().Play(animationClip.name);
+            if (tokenCounter.getTokenCount() >= tokenCount)
+            {
+                GetComponent<Animator>().Play(animationClip.name);
+            }
         }
     }
 }

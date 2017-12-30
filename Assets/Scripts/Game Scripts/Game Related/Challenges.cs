@@ -75,6 +75,9 @@ public class Challenges : MonoBehaviour {
             PlayerPrefs.SetInt("training" + levelNumber, 1);
         }
 
+        //Tokens Add
+        PlayerPrefs.SetInt("TotalTokens", tokenCount.totalTokenCount);
+
         //Data Transfer
 
         //Time

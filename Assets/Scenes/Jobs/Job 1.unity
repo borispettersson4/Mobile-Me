@@ -5125,6 +5125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 0
   explosionForce: 40
+  layerNumber: 0
+  isParentTrigger: 0
 --- !u!65 &149496380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6860,6 +6862,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBoostAmount: 30
+  freezeRot: 0
+  triggerMode: 0
 --- !u!64 &191996308
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21466,6 +21470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBoostAmount: 30
+  freezeRot: 0
+  triggerMode: 0
 --- !u!64 &603788953
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25462,6 +25468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 7
   explosionForce: 50
+  layerNumber: 0
+  isParentTrigger: 0
   lugger: {fileID: 1762971253}
   guiManager: {fileID: 0}
 --- !u!114 &701950347
@@ -40660,6 +40668,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 0
   explosionForce: 40
+  layerNumber: 0
+  isParentTrigger: 0
 --- !u!65 &1027038467
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65872,6 +65882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 7
   explosionForce: 50
+  layerNumber: 0
+  isParentTrigger: 0
 --- !u!64 &1651547101
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -73035,6 +73047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 0
   explosionForce: 40
+  layerNumber: 0
+  isParentTrigger: 0
 --- !u!65 &1817520206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77304,6 +77318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 7
   explosionForce: 50
+  layerNumber: 0
+  isParentTrigger: 0
 --- !u!64 &1947143136
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -79398,6 +79414,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 7
   explosionForce: 50
+  layerNumber: 0
+  isParentTrigger: 0
 --- !u!64 &1991717430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81512,6 +81530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magnitudeCol: 7
   explosionForce: 10
+  layerNumber: 0
+  isParentTrigger: 0
   jointConnector: {fileID: 1265290280}
 --- !u!114 &2039499722
 MonoBehaviour:
@@ -83429,7 +83449,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Job 1 : New Kugger'
+  m_Text: 'Job 1 : New Lugger'
 --- !u!222 &2077825828
 CanvasRenderer:
   m_ObjectHideFlags: 0
