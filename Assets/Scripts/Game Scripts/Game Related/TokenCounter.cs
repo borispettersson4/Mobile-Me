@@ -31,6 +31,11 @@ public class TokenCounter : MonoBehaviour
         tokenCount += i;
     }
 
+    public void substractTokens(int i)
+    {
+        tokenCount -= i;
+    }
+
     public bool isFull()
     {
         return (tokenCount >= totalTokenCount);

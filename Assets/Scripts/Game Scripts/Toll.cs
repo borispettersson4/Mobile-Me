@@ -11,7 +11,7 @@ public class Toll : MonoBehaviour {
     public string animationA;
     public string animationB;
     public Player player;
-    public float tokenCount;
+    public int tokenCount;
 
     void OnTriggerEnter(Collider col)
     {
@@ -32,6 +32,7 @@ public class Toll : MonoBehaviour {
         {
             guiComponent.SetActive(false);
             animator.Play(animationA);
+            tokenCounter.substractTokens(tokenCount);
         }
     }
 
