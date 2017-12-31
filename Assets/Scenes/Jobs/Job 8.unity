@@ -58710,7 +58710,7 @@ MonoBehaviour:
   animationA: BoothLvl8Anim
   animationB: BoothALvl8NoTokens
   player: {fileID: 67421996}
-  tokenCount: 0
+  tokenCount: 5
 --- !u!95 &1414217439 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 4c14e3cfb5feb7f45b9f8ff47c778184,

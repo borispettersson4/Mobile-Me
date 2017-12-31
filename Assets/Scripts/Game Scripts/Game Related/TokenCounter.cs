@@ -16,10 +16,10 @@ public class TokenCounter : MonoBehaviour
         totalTokens = totalTokenCount;
     }
 
-    void Update()
-    {
-        currentTokens.text = tokenCount + " / " + totalTokenCount;
-    }
+   // void Update()
+  //  {
+    //    currentTokens.text = tokenCount + " / " + totalTokenCount;
+   // }
 
     public int getTokenCount()
     {
@@ -29,11 +29,13 @@ public class TokenCounter : MonoBehaviour
     public void addTokens(int i)
     {
         tokenCount += i;
+        currentTokens.text = tokenCount + " / " + totalTokenCount;
     }
 
     public void substractTokens(int i)
     {
         tokenCount -= i;
+        currentTokens.text = tokenCount + " / " + totalTokenCount;
     }
 
     public bool isFull()
