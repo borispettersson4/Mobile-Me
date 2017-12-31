@@ -14,23 +14,19 @@ public class WheelGripMonitor : MonoBehaviour
     float sideWaysGrip;
     float frontGrip;
 
+    public float standardMultiplyer = 1;
+
     WheelFrictionCurve wfc = new WheelFrictionCurve();
 
     void Awake()
     {
         carCon = GetComponent<CarController>();
-    //    for (int i = 0; i < wheels.Length; i++)
-        {
-      //      wheels[i] = carCon.car_Infos[i].leftWheel;
-      //      wheels[i + 1] = carCon.car_Infos[i].rightWheel;
-      //      i++;
-        }
 
         //Get grip levels
         for (int i = 0; i < wheels.Length; i++)
         {
-           sideWaysGrip = wheels[i].sidewaysFriction.stiffness;
-           frontGrip = wheels[i].forwardFriction.stiffness;
+           sideWaysGrip = wheels[i].sidewaysFriction.stiffness * standardMultiplyer;
+           frontGrip = wheels[i].forwardFriction.stiffness * standardMultiplyer;
         }
     }
 
