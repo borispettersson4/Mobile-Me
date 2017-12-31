@@ -2301,7 +2301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &97283626
 Transform:
   m_ObjectHideFlags: 0
@@ -12631,6 +12631,7 @@ GameObject:
   - component: {fileID: 440008789}
   - component: {fileID: 440008791}
   - component: {fileID: 440008790}
+  - component: {fileID: 440008793}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -12704,6 +12705,18 @@ Transform:
   m_Father: {fileID: 751469531}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 113.26201, z: 0}
+--- !u!114 &440008793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440008788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a33aa42fc8fc5e4795344ca1745e9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showOnAwake: 1
 --- !u!1 &440727656
 GameObject:
   m_ObjectHideFlags: 0
@@ -22158,6 +22171,7 @@ GameObject:
   - component: {fileID: 802665379}
   - component: {fileID: 802665378}
   - component: {fileID: 802665377}
+  - component: {fileID: 802665380}
   m_Layer: 5
   m_Name: Free Run Button
   m_TagString: Untagged
@@ -22225,8 +22239,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1464615128}
-        m_MethodName: Play
+      - m_Target: {fileID: 1322324520}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22236,6 +22250,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
+      - m_Target: {fileID: 751469532}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CameraClose
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 802665380}
+        m_MethodName: goToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Free Run
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &802665378
@@ -22273,6 +22309,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 802665375}
+--- !u!114 &802665380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802665375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3419e66145d16284da0168d1684c398c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &805110955
 GameObject:
   m_ObjectHideFlags: 0
