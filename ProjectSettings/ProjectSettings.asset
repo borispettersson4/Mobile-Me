@@ -125,9 +125,9 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 1.1
   preloadedAssets:
-  - {fileID: 1400213219303558, guid: 32e96b43f74541144836328f10f1d785, type: 2}
+  - {fileID: 1799054045755786, guid: 88d730c488261df4794e4a0c07d0a9d0, type: 2}
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
   xboxOneDisableKinectGpuReservation: 0
@@ -156,7 +156,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
   iPhoneStrippingLevel: 0
@@ -227,8 +227,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/Boris/Desktop/Development/Mobile Me/Mobile-Me/user.keystore
-  AndroidKeyaliasName: boris
+  AndroidKeystoreName: C:/Users/Boris/Desktop/Development/Mobile Me/Mobile-Me/Boris.keystore
+  AndroidKeyaliasName: boris pettersson
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
