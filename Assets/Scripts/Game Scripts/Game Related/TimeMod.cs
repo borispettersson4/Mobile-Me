@@ -5,7 +5,7 @@ using UnityEngine;
 public class TimeMod : MonoBehaviour {
 
     public float timeScale = 1;
-    public bool setAwake = false;
+    public bool setAwake = true;
 
     public void setTimeScale(int x)
     {

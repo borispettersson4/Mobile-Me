@@ -36,6 +36,11 @@ public class Challenges : MonoBehaviour {
     void Awake()
     {
 
+        if(GetComponent<AdShower>() != null)
+        {
+            GetComponent<AdShower>().showAd();
+        }
+
         if(deathGUI != null)
         {
             Destroy(deathGUI);

@@ -19,9 +19,6 @@ public class GameTime : MonoBehaviour {
 
     void Update()
     {
-        string timeFormat = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds); 
-
-        timerGUI.text = string.Format("{0}:{1:00}",(int)timeSpan.TotalMinutes, timeSpan.Seconds);
 
         if(timeSpan.TotalSeconds > targetTime)
         {
@@ -34,6 +31,11 @@ public class GameTime : MonoBehaviour {
         yield return new WaitForSeconds(1);
         timeSpan = timeSpan.Add(TimeSpan.FromSeconds(1));
         StartCoroutine(countDown());
+        Debug.Log("COUNTDOWN");
+
+        string timeFormat = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+
+        timerGUI.text = string.Format("{0}:{1:00}", (int)timeSpan.TotalMinutes, timeSpan.Seconds);
     }
 
     public void timerStop()
