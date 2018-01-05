@@ -125,7 +125,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.1
+  bundleVersion: 1.16
   preloadedAssets:
   - {fileID: 1799054045755786, guid: 88d730c488261df4794e4a0c07d0a9d0, type: 2}
   metroInputSource: 0
@@ -153,7 +153,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.cupofteagames.airportlugger
   buildNumber: {}
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 3
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0

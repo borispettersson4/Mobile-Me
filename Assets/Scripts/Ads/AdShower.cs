@@ -13,10 +13,6 @@ public class AdShower : MonoBehaviour
     void Awake()
     {
         RequestInterstitial();
-        if (showOnAwake)
-        {
-            showAd();
-        }
     }
 
 
@@ -34,15 +30,13 @@ public class AdShower : MonoBehaviour
         AdRequest request = new AdRequest.Builder().Build();
         // Load the interstitial with the request.
         interstitial.LoadAd(request);
+        interstitial.Show();
 
     }
 
     public void showAd()
     {
-        if (interstitial.IsLoaded())
-        {
-            interstitial.Show();
-        }
+        RequestInterstitial();
     }
 
     public void cleanAd()
